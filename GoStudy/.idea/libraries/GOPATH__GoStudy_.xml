@@ -1,0 +1,34 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;GoStudy&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/goc2p/src/webcrawler" />
+      <root url="file://$USER_HOME$/goc2p/src/helper" />
+      <root url="file://$USER_HOME$/goc2p/src/cnet" />
+      <root url="file://$USER_HOME$/goc2p/src/testing" />
+      <root url="file://$USER_HOME$/goc2p/src/multiproc" />
+      <root url="file://$USER_HOME$/goc2p/src/logging" />
+      <root url="file://$USER_HOME$/goc2p/src/loadgen" />
+      <root url="file://$USER_HOME$/goc2p/src/sync1" />
+      <root url="file://$USER_HOME$/goc2p/src/basic" />
+      <root url="file://$USER_HOME$/goc2p/src/chan1" />
+      <root url="file://$USER_HOME$/goc2p/src/pkgtool" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/goc2p/src/webcrawler" />
+      <root url="file://$USER_HOME$/goc2p/src/helper" />
+      <root url="file://$USER_HOME$/goc2p/src/cnet" />
+      <root url="file://$USER_HOME$/goc2p/src/testing" />
+      <root url="file://$USER_HOME$/goc2p/src/multiproc" />
+      <root url="file://$USER_HOME$/goc2p/src/logging" />
+      <root url="file://$USER_HOME$/goc2p/src/loadgen" />
+      <root url="file://$USER_HOME$/goc2p/src/sync1" />
+      <root url="file://$USER_HOME$/goc2p/src/basic" />
+      <root url="file://$USER_HOME$/goc2p/src/chan1" />
+      <root url="file://$USER_HOME$/goc2p/src/pkgtool" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
