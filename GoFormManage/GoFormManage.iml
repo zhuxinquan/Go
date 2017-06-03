@@ -8,6 +8,5 @@
     <content url="file://$MODULE_DIR$/bin" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Go SDK" level="project" />
-    <orderEntry type="library" name="GOPATH &lt;GoFormManage&gt;" level="project" />
   </component>
 </module>

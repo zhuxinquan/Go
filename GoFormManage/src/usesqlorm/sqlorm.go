@@ -6,6 +6,11 @@ import (
 	_ "github.com/ziutek/mymysql/godrv"
 	"time"
 	"fmt"
+	"strconv"
+	"reflect"
+	"strings"
+	"unsafe"
+	"util"
 )
 
 type Userinfo struct {
@@ -15,14 +20,23 @@ type Userinfo struct {
 	Created     time.Time
 }
 
-type test_time struct {
-	time time.Time
-	id int32
+func (u Userinfo)String() string{
+	return strconv.Itoa(u.Uid)
 }
 
-func (t * test_time)String() string {
-	return t.time.String()
+type Tt struct {
+	Id int `PK`
+	Time time.Time
 }
+
+func String(b []byte) (s string) {
+	pbytes := (*reflect.SliceHeader)(unsafe.Pointer(&b))
+	pstring := (*reflect.StringHeader)(unsafe.Pointer(&s))
+	pstring.Data = pbytes.Data
+	pstring.Len = pbytes.Len
+	return
+}
+
 
 func main(){
 
@@ -32,37 +46,21 @@ func main(){
 		panic(err)
 	}
 
-	beedb.OnDebug=true
+	//beedb.OnDebug=true
 
 	orm := beedb.New(db)
 
-	var t test_time
-
-	orm.Where("id=?", 1).Find(&t)
-
-	fmt.Println(t.time)
-
-	//addslice := make([]map[string]interface{}, 0)
-	//add := make(map[string]interface{})
-	//add2 := make(map[string]interface{})
-	//add["username"] = "astaxie"
-	//add["departname"] = "cloud develop"
-	//add["created"] = "2012-12-02"
-	//add2["username"] = "astaxie2"
-	//add2["departname"] = "cloud develop2"
-	//add2["created"] = "2012-12-02"
-	//addslice =append(addslice, add, add2)
-	//fmt.Println(orm.SetTable("userinfo").InsertBatch(addslice))
-
-	//var saveone Userinfo
-	//saveone.Username = "Test Add User"
-	//saveone.Departname = "Test Add Departname"
-	//fmt.Println(time.Now())
-	//saveone.Created = time.Now()
-	//fmt.Println("Time:", saveone.Created)
-	//err = orm.Save(&saveone)
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println(saveone.Uid)
+	var user Tt
+	//var userinfo Userinfo
+	orm.Where("id=?", 1).Find(&user)
+	a, _ := orm.SetTable("userinfo").SetPK("uid").Select("uid,username").FindMap()
+	for _, v := range a {
+		for k, value := range v {
+			if(strings.EqualFold(k, "uid")) {
+				fmt.Println(k, ":", util.ByteToInt(value))
+			} else {
+				fmt.Println(k, ":", string(value))
+			}
+		}
+	}
 }

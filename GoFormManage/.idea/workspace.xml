@@ -10,6 +10,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/GoFormManage$All_in__util_.coverage" NAME="All in 'util' Coverage Results" MODIFIED="1496455560759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="GoFormManage" />
@@ -30,23 +33,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sqlorm.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sqlorm.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/usesqlorm/sqlorm.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="486">
+              <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+              <folding>
+                <element signature="e#14#171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bytetoint.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util/bytetoint.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recover.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/panicrecover/recover.go">
+      <file leaf-file-name="bytetoint_test.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/util/bytetoint_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="231">
+              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#14#37#0" expanded="true" />
+                <element signature="e#14#42#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +80,9 @@
     <findStrings>
       <find>strings</find>
       <find>mymysql</find>
-      <find>time</find>
       <find>open</find>
+      <find>date</find>
+      <find>time</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -97,6 +113,10 @@
         <option value="$PROJECT_DIR$/panicrecover/recover.go" />
         <option value="$PROJECT_DIR$/src/package/pak.go" />
         <option value="$PROJECT_DIR$/src/panicrecover/recover.go" />
+        <option value="$PROJECT_DIR$/src/github.com/astaxie/beedb/beedb.go" />
+        <option value="$PROJECT_DIR$/src/util/bytetoint_test.go" />
+        <option value="$PROJECT_DIR$/src/util/bytetoint.go" />
+        <option value="$PROJECT_DIR$/src/usesqlorm/sqlorm.go" />
       </list>
     </option>
   </component>
@@ -108,8 +128,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1365" />
-    <option name="width" value="1368" />
-    <option name="height" value="769" />
+    <option name="width" value="1922" />
+    <option name="height" value="1081" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="1" />
@@ -129,9 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -167,17 +184,60 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFormManage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFormManage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFormManage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoFormManage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pkg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linux_amd64" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="github.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider$1" />
+    <property name="settings.editor.selected.configurable" value="go" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27757353" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JavaLanguage/GroupBlog/BlogGroup1.1.2" />
@@ -205,25 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Single File.go run recover.go (1)">
-    <configuration default="false" name="go run test_main.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="GoFormManage" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/test/test_main.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run usedatabase.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="GoFormManage" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/database/usedatabase.go" />
-      <method />
-    </configuration>
-    <configuration default="false" name="go run sqlorm.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
-      <module name="GoFormManage" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/usesqlorm/sqlorm.go" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Test.All in 'util'">
     <configuration default="false" name="go run recover.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="GoFormManage" />
       <working_directory value="$PROJECT_DIR$" />
@@ -234,6 +276,31 @@
       <module name="GoFormManage" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/src/panicrecover/recover.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="go run sqlorm.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
+      <module name="GoFormManage" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/usesqlorm/sqlorm.go" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in 'util'" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="GoFormManage" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="util" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestByteToInt in bytetoint_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true">
+      <module name="GoFormManage" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="util" />
+      <pattern value="^TestByteToInt$" />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -645,20 +712,27 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run test_main.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run usedatabase.go" />
-      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run sqlorm.go" />
-      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run recover.go" />
-      <item index="4" class="java.lang.String" itemvalue="Go Single File.go run recover.go (1)" />
+    <configuration default="false" name="go run sqlorm.go (1)" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="GoFormManage" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/usesqlorm/sqlorm.go" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run sqlorm.go (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run recover.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run recover.go (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Go Single File.go run sqlorm.go" />
+      <item index="4" class="java.lang.String" itemvalue="Go Test.All in 'util'" />
+      <item index="5" class="java.lang.String" itemvalue="Go Test.TestByteToInt in bytetoint_test.go" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run recover.go (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run recover.go" />
-        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run sqlorm.go" />
-        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run usedatabase.go" />
-        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run test_main.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Test.All in 'util'" />
+        <item index="1" class="java.lang.String" itemvalue="Go Test.TestByteToInt in bytetoint_test.go" />
+        <item index="2" class="java.lang.String" itemvalue="Go Single File.go run recover.go (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Go Single File.go run recover.go" />
+        <item index="4" class="java.lang.String" itemvalue="Go Single File.go run sqlorm.go" />
       </list>
     </recent_temporary>
   </component>
@@ -683,18 +757,60 @@
       <workItem from="1496324508859" duration="2784000" />
       <workItem from="1496369571506" duration="734000" />
       <workItem from="1496370328218" duration="4074000" />
-      <workItem from="1496382644933" duration="9038000" />
+      <workItem from="1496382644933" duration="15543000" />
+      <workItem from="1496449331414" duration="9375000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_'util' - 2017.06.03 at 10h 06m 00s.xml">
+      <configuration name="All in 'util'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="All_in_'util' - 2017.06.03 at 10h 06m 11s.xml">
+      <configuration name="All in 'util'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="All_in_'util' - 2017.06.03 at 10h 09m 36s.xml">
+      <configuration name="All in 'util'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="All_in_'util' - 2017.06.03 at 11h 01m 48s.xml">
+      <configuration name="All in 'util'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="All_in_'util' - 2017.06.03 at 11h 01m 57s.xml">
+      <configuration name="All in 'util'" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestByteToInt_in_bytetoint_test_go - 2017.06.03 at 10h 07m 18s.xml">
+      <configuration name="TestByteToInt in bytetoint_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestByteToInt_in_bytetoint_test_go - 2017.06.03 at 10h 09m 28s.xml">
+      <configuration name="TestByteToInt in bytetoint_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestByteToInt_in_bytetoint_test_go - 2017.06.03 at 10h 37m 23s.xml">
+      <configuration name="TestByteToInt in bytetoint_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestByteToInt_in_bytetoint_test_go - 2017.06.03 at 10h 37m 36s.xml">
+      <configuration name="TestByteToInt in bytetoint_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestByteToInt_in_bytetoint_test_go - 2017.06.03 at 10h 44m 21s.xml">
+      <configuration name="TestByteToInt in bytetoint_test.go" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35734000" />
+    <option name="totallyTimeSpent" value="51614000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1365" y="0" width="1368" height="769" extended-state="6" />
+    <frame x="1365" y="0" width="1922" height="1081" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -702,12 +818,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.506079" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26517573" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15884861" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.413738" sideWeight="0.49392098" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41364604" sideWeight="0.49392098" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21732523" sideWeight="0.489418" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15561497" sideWeight="0.489418" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -746,53 +863,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/client_upload_file/post_file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" column="1" lean-forward="false" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/upload.gtpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/usedatabase.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding>
-            <marker date="1496319376895" expanded="true" signature="504:546" ph="update useri... " />
-            <marker date="1496319376895" expanded="true" signature="808:830" ph="SELECT * FRO... userinfo" />
-            <marker date="1496319376895" expanded="true" signature="1179:1211" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Login.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test_main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client_upload_file/post_file.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -1016,28 +1086,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/gopath/src/github.com/ziutek/mymysql/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="-756">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/usedatabase.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <marker date="1496319376895" expanded="true" signature="504:546" ph="update useri... " />
-            <marker date="1496319376895" expanded="true" signature="808:830" ph="SELECT * FRO... userinfo" />
-            <marker date="1496319376895" expanded="true" signature="1179:1211" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/gopath/src/github.com/ziutek/mymysql/README.md" />
     <entry file="file:///usr/local/go/src/time/time.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1046,13 +1095,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/gopath/src/github.com/ziutek/mymysql/godrv/driver.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="320" column="20" lean-forward="false" selection-start-line="320" selection-start-column="20" selection-end-line="320" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/gopath/src/github.com/ziutek/mymysql/godrv/driver.go" />
     <entry file="file:///usr/local/go/src/database/sql/driver/driver.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -1069,61 +1112,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/gopath/src/github.com/go-sql-driver/mysql/appengine.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/gopath/src/github.com/go-sql-driver/mysql/collations.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4946">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/gopath/src/github.com/astaxie/beedb/beedb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="484" column="23" lean-forward="true" selection-start-line="484" selection-start-column="23" selection-end-line="484" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/package/pak.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/gopath/src/github.com/go-sql-driver/mysql/appengine.go" />
+    <entry file="file://$USER_HOME$/gopath/src/github.com/go-sql-driver/mysql/collations.go" />
+    <entry file="file://$USER_HOME$/gopath/src/github.com/astaxie/beedb/beedb.go" />
+    <entry file="file://$PROJECT_DIR$/src/package/pak.go" />
     <entry file="file://$PROJECT_DIR$/src/client_upload_file/post_file.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beedb/beedb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/reflect/value.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="935" column="0" lean-forward="false" selection-start-line="935" selection-start-column="0" selection-end-line="935" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/panicrecover/recover.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="399">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
-            <element signature="e#14#37#0" expanded="true" />
+            <element signature="e#14#37#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/usedatabase.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <marker date="1496319376895" expanded="true" signature="504:546" ph="update useri... " />
+            <marker date="1496319376895" expanded="true" signature="808:830" ph="SELECT * FRO... userinfo" />
+            <marker date="1496319376895" expanded="true" signature="1179:1211" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/encoding/binary/binary.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="180" column="39" lean-forward="false" selection-start-line="180" selection-start-column="39" selection-end-line="180" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/strconv/atoi.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="202" column="34" lean-forward="true" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/bytetoint.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/usesqlorm/sqlorm.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="486">
+          <caret line="58" column="33" lean-forward="false" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
+          <folding>
+            <element signature="e#14#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/bytetoint_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,7 +1237,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27757353" />
               </list>
             </option>
           </splitter-proportions>
@@ -1184,6 +1262,7 @@
             <option name="proportions">
               <list>
                 <option value="0.27757353" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1203,7 +1282,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>GOPATH &lt;GoFormManage&gt;</last-edited>
+          <last-edited>Go SDK</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
