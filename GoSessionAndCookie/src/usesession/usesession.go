@@ -3,7 +3,6 @@ package main
 import (
 	"net/http"
 	"github.com/astaxie/session"
-
 	"fmt"
 )
 
@@ -14,18 +13,14 @@ func init() {
 }
 
 func getSession(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "getSession")
-	//sess := globalSessions.SessionStart(w, r)
-	//session := sess.Get("username")
-	//fmt.Fprintf(w, "Get Session Ok, Session is %s", session)
+	sess := globalSessions.SessionStart(w, r)
+	session := sess.Get("username")
+	fmt.Fprintf(w, "Get Session Ok, Session is %s", session)
 }
 
 func index(w http.ResponseWriter, r * http.Request) {
-	//fmt.Println("hello")
-	//sess := globalSessions.SessionStart(w, r)
-	//
-	//fmt.Println("hello------------")
-	//sess.Set("username", "set username")
+	sess := globalSessions.SessionStart(w, r)
+	sess.Set("username", "set username")
 	fmt.Fprint(w, "Set Session Ok!")
 }
 
@@ -36,5 +31,4 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-
 }
