@@ -18,6 +18,6 @@ func main() {
 		fout.Write([]byte("Just a test!\r\n"))
 	}
 
-	//在该位置以覆盖的方式写入
+	//在指定位置以覆盖的方式写入
 	fout.WriteAt([]byte("123"), 4)
 }
