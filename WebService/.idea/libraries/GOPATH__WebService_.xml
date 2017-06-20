@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;WebService&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../I18N_LOCAL/src/i18ntest" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../I18N_LOCAL/src/i18ntest" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>
