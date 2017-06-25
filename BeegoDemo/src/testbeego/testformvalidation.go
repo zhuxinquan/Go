@@ -1,43 +1,56 @@
 package main
 
 import (
-	"github.com/astaxie/beego/validation"
-	"log"
+	"github.com/astaxie/beego/orm"
+	"fmt"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 type User struct {
-	Name string
-	Age int
+	Id          int
+	Name        string
+	Profile     *Profile   `orm:"rel(one)"` // OneToOne relation
+	Post        []*Post `orm:"reverse(many)"` // 设置一对多的反向关系
+}
+
+type Profile struct {
+	Id          int
+	Age         int16
+	User        *User   `orm:"reverse(one)"` // 设置一对一反向关系(可选)
+}
+
+type Post struct {
+	Id    int
+	Title string
+	User  *User  `orm:"rel(fk)"`    //设置一对多关系
+	Tags  []*Tag `orm:"rel(m2m)"`
+}
+
+type Tag struct {
+	Id    int
+	Name  string
+	Posts []*Post `orm:"reverse(many)"`
+}
+
+func init() {
+	// 需要在init中注册定义的model
+	orm.RegisterModel(new(User), new(Post), new(Profile), new(Tag))
+	orm.RegisterDriver("mysql", orm.DRMySQL)
+
+	orm.RegisterDataBase("default", "mysql", "root:2737353904@/test?charset=utf8")
 }
 
 func main() {
-	u := User{"man", 12}
-	valid := validation.Validation{}
-	valid.Required(u.Name, "name")
-	valid.MaxSize(u.Name, 15, "nameMax")
-	valid.Range(u.Age, 0, 18, "age")
+	o := orm.NewOrm()
+	o.Using("default") // 默认使用 default，你可以指定为其他数据库
 
-	if valid.HasErrors() {
-		// 如果有错误信息，证明验证没通过
-		// 打印错误信息
-		for _, err := range valid.Errors {
-			log.Println(err.Key, err.Message)
-		}
-	}
-	// or use like this
-	if v := valid.Max(u.Age, 140, "age"); !v.Ok {
-		log.Println(v.Error.Key, v.Error.Message)
-	}
-	// 定制错误信息
-	minAge := 18
-	valid.Min(u.Age, minAge, "age").Message("少儿不宜！")
-	// 错误信息格式化
-	valid.Min(u.Age, minAge, "age").Message("%d不禁", minAge)
-	if valid.HasErrors() {
-		// 如果有错误信息，证明验证没通过
-		// 打印错误信息
-		for _, err := range valid.Errors {
-			log.Println(err.Key, err.Message)
-		}
-	}
+	profile := new(Profile)
+	profile.Age = 30
+
+	user := new(User)
+	user.Profile = profile
+	user.Name = "slene"
+
+	fmt.Println(o.Insert(profile))
+	fmt.Println(o.Insert(user))
 }
