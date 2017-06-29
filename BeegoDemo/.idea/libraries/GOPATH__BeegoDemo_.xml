@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="file://C:/Software/Go/src/context" />
       <root url="file://C:/Software/Go/src/html" />
+      <root url="file://$PROJECT_DIR$/../GoplDemo/src/chap1_hello_wrold" />
       <root url="file://C:/Software/Go/src/text" />
       <root url="file://C:/Software/Go/src/runtime" />
       <root url="file://C:/Software/Go/src/net" />
@@ -49,6 +50,7 @@
     <SOURCES>
       <root url="file://C:/Software/Go/src/context" />
       <root url="file://C:/Software/Go/src/html" />
+      <root url="file://$PROJECT_DIR$/../GoplDemo/src/chap1_hello_wrold" />
       <root url="file://C:/Software/Go/src/text" />
       <root url="file://C:/Software/Go/src/runtime" />
       <root url="file://C:/Software/Go/src/net" />
