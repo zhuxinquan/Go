@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 
+type Ss struct{
+
+}
+
 
 func main() {
 	lable:
