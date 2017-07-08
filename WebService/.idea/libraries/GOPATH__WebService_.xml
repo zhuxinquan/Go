@@ -1,11 +1,23 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;WebService&gt;">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../I18N_LOCAL/src/i18ntest" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/conf" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/controllers" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/models" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/static" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/utils" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/views" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/../I18N_LOCAL/src/i18ntest" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/conf" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/controllers" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/models" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/github.com" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/static" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/utils" />
+      <root url="file://$PROJECT_DIR$/../webframeworktest/src/views" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />
